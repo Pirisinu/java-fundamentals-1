@@ -13,7 +13,13 @@ public class CibiPreferiti {
                 "Minestrone",
                 "Ravioli ricotta e spinaci"
         };
-
+        // Lunghezza dell'array
+        System.out.println("Lunghezza dell'array: " + piattiPreferiti.length);
+        // Cibo in prima posizione dell'array
+        System.out.println("Cibo in prima posizione: " + piattiPreferiti[0]);
+        // Cibo in ultima posizione
+        System.out.println("Cibo in prima posizione: " + piattiPreferiti[piattiPreferiti.length - 1]);
+        // Cibo nella metà della classifica
 
 
     }
