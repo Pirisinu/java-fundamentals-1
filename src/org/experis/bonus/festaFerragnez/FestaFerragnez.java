@@ -21,5 +21,9 @@ public class FestaFerragnez {
         // Importo lo scanner per ricevere in seguito il nome dell'utente
         Scanner scanner = new Scanner(System.in);
 
+        //Chideo il nome all'utente
+        System.out.println("Inserisci il tuo nome");
+        String userName = scanner.nextLine();
+        System.out.println(userName);
     }
 }
