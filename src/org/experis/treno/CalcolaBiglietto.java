@@ -15,8 +15,8 @@ public class CalcolaBiglietto {
         System.out.println("Quanti anni hai?");
         userAge = scanner.nextInt();
 
-        // Il prezzo del tiket è 0.21€
-        final double tiketPrice = 0.21;
+        // Il prezzo del tiket al km è 0.21€
+        final double tiketPriceKM = 0.21;
 
         //Dichiaro la variabile discount e gli assegno un valore in base all'età
         int discount;
