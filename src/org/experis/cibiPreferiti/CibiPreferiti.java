@@ -11,7 +11,7 @@ public class CibiPreferiti {
                 "Penne all'arrabbiata",
                 "Gnocchi alla sorrentina",
                 "Minestrone",
-                "Ravioli ricotta e spinaci"
+                "gelato"
         };
         // Lunghezza dell'array
         System.out.println("Lunghezza dell'array: " + piattiPreferiti.length);
@@ -20,7 +20,12 @@ public class CibiPreferiti {
         // Cibo in ultima posizione
         System.out.println("Cibo in prima posizione: " + piattiPreferiti[piattiPreferiti.length - 1]);
         // Cibo nella metà della classifica
-
-
+        int middleIndex;
+        if((piattiPreferiti.length % 2)!=0){
+            middleIndex = (piattiPreferiti.length / 2) + 1;
+        }else{
+            middleIndex = piattiPreferiti.length / 2;
+        }
+        System.out.println("Indice dell'elemento mediano: " + middleIndex);
     }
 }
