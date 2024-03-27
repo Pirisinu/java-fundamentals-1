@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class FestaFerragnez {
     public static void main(String[] args) {
         // Inizzializzare l'array con i nomi degli inviati
-        String[] invited = {
+        String[] invitedList = {
                 "Dua Lipa",
                 "Paris Hilton",
                 "Manuel Agnelli",
@@ -25,5 +25,17 @@ public class FestaFerragnez {
         System.out.println("Inserisci il tuo nome");
         String userName = scanner.nextLine();
         System.out.println(userName);
+
+        // Se il suo nome è presente puo accedere alla lista altrimenti no.
+        boolean isInvited = false;
+        for (String guest : invitedList) {
+            if (userName.equalsIgnoreCase(guest)) {
+                isInvited = true;
+                break;
+            }
+        }
+        String message = isInvited ? "Puoi entrare nella festa." : "Non puoi entrare.";
+
+        System.out.println(message);
     }
 }
