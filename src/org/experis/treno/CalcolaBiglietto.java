@@ -19,14 +19,17 @@ public class CalcolaBiglietto {
         final double tiketPriceKM = 0.21;
 
         //Dichiaro la variabile discount e gli assegno un valore in base all'età
-        int discount;
+        int discount = 0;
         if(userAge < 18){
             discount = 20;
-        } else if (userAge >65) {
-            discount = 20;
+        } else if (userAge > 65) {
+            discount = 50;
         }
         // Va applicato uno sconto del 20% ai minorenni e un 40% per gli over65
+        double discountValue = (kmSelected * tiketPriceKM) * (discount / 100.0);
+        double priceTiket = (kmSelected * tiketPriceKM) - discountValue;
 
+        System.out.println(priceTiket);
     }
 
 }
