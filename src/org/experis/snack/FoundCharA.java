@@ -8,12 +8,22 @@ public class FoundCharA {
     public static void main(String[] args) {
         // Importo lo scanner
         Scanner scan = new Scanner(System.in);
+
+        // Chiedo il testo da scandionare
         System.out.println("Inserisci testo a piacimento");
+        // Salvo il testo
         String inputString = scan.nextLine();
+
+        // Chiedo la lettera da cercare
+        System.out.println("Inserisci il carattere da cercare");
+        // Salvo il carattere
+        char charToSearch = scan.next().charAt(0);
+
+
         char[] listChar = inputString.toCharArray();
         int counter = 0;
         for (char c : listChar){
-            if (c == 'a'){
+            if (c == charToSearch){
                 counter++;
             }
         }
